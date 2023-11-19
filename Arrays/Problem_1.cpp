@@ -9,7 +9,7 @@ vector<int> productExceptSelf(vector<int>&nums )
 {
     int n = nums.size();
 
-    //Intializing all elements with 1 and of size equal to the num
+    //Intializing all elements with 1 and make array of size equal to the num
     vector<int>answer( n, 1);
     int index = 0;
     for(int i=0;  i<n;  i++ ){
@@ -23,6 +23,7 @@ vector<int> productExceptSelf(vector<int>&nums )
 
             }
         }
+        //Store the result in answer array
         answer[index] = product;
         index++;
 
