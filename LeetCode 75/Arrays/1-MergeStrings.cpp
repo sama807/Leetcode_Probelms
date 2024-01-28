@@ -29,9 +29,7 @@ string mergeAlternately(string word1, string word2) {
         j++;
     }
 
-    for(int k=0; k<mergedString.size(); k++){
-        cout<<mergedString[k];
-    }
+   
 
     return mergedString;
 }
@@ -41,7 +39,10 @@ int main(){
     string a = "abcde";
     string b= "pqr";
 
-    mergeAlternately(a,b);
+    string mergedString= mergeAlternately(a,b);
+    for(int k=0; k<mergedString.size(); k++){
+        cout<<mergedString[k];
+    }
     
     return 0;
 }
