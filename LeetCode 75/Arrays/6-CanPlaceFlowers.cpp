@@ -4,7 +4,6 @@ using namespace std;
 
 bool canPlaceFlowers(vector<int>& flowerbed, int n) {
 
-   bool canPlaceFlowers(vector<int>& flowerbed, int n) {
     int size = flowerbed.size();
     int count = 0;
     for(int i = 0; i < size; i++) {
@@ -22,8 +21,6 @@ bool canPlaceFlowers(vector<int>& flowerbed, int n) {
     }
     return count >= n;
 }
-
-} 
 
 
 int main() {
