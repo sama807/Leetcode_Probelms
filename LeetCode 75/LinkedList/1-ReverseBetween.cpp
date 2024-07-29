@@ -42,7 +42,7 @@ ListNode* reverseBetween(ListNode* head, int left, int right) {
     left_node->next = curr;
 
     head = dummy->next; // Update head if left is the first node
-    delete dummy; // Release the memory allocated for dummy
+    delete dummy; 
 
     return head;
 }
