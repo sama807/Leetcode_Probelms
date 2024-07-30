@@ -23,7 +23,6 @@ int nodeCount(ListNode* head) {
 ListNode* deleteMiddle(ListNode* head) {
 
     int nodesCount = nodeCount(head);
-    //nodes count start from zero 0th index is the first node ....
     int n = nodesCount/2 ;
     //if there is only one node
     if (nodesCount <= 1) {
@@ -47,7 +46,6 @@ ListNode* deleteMiddle(ListNode* head) {
     return head;   
 }
 
-// Function to print the elements of the linked list
 void printList(ListNode* head) {
     ListNode* curr = head;
     while (curr != nullptr) {
@@ -57,7 +55,6 @@ void printList(ListNode* head) {
     cout << endl;
 }
 int main(){
-    // Create a sample linked list: 1 -> 2 -> 3->4->5
     ListNode* head = new ListNode(1);
     head->next = new ListNode(2);
     head->next->next = new ListNode(3);
